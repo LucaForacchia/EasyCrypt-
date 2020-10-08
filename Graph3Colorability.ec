@@ -539,14 +539,3 @@ lemma threecol_extractability h' a' chl1' zl1' chl2'  zl2' &m:
     rewrite coherentcolorationsnd => //.    
     smt.
   qed.    
-
-
-
-(* This is in itself an interesting lemma! 
-      have uselessbutinterestinglemma: forall (n1 : node, n2: node), (n1,n2) \in chl2' => (oget (assoc (zip chl2' zl2') (n1, n2))).`1.`1 = (oget (assoc (zip chl2' zl2') (n2, n1))).`1.`2.
-move => node1 node2 edgein.
-      rewrite coherentcoloration => //. smt. 
-      smt.
-      rewrite coherentcolorationsnd => //. smt.
-    smt.
-*)
